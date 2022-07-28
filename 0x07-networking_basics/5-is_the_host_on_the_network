@@ -4,7 +4,7 @@
 IP="$1"
 argcount="$#"
 
-if [ "$argcount" -ne 1 ]
+if [ "$argcount" -lt 1 ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 
