@@ -16,7 +16,6 @@ Regular expression is an expression used regularly. Regular expressions are extr
 | `6-phone_number.rb` | A regular expression that match with 10 digit phone number|
 | `7-OMG_WHY_ARE_YOU_SHOUTING.rb` | A regular expression that only matches capital letters |
 | `100-textme.rb` | Filters information of a log file |
-| `101-passed_linkedin_regex_challenge.jpg` | Result of Linkedin Regex Puzzle |
 
 ## PS
 
