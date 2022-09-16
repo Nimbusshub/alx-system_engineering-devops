@@ -1,3 +1,4 @@
+# Create a in tmp with basic requirents
 file { '/tmp/school':
   ensure  => present,
   mode    => '0744',
