@@ -17,7 +17,7 @@ printf %s "server {
         index index.html index.htm index.html-debian.html;
                 
         location /redirect_me{
-            return 301 https://www.github.com/belovetech;
+            return 301 https://www.github.com/Nimbusshub;
         }
         
         error_page 404 /404.html;
