@@ -44,4 +44,3 @@ frontend proxynode
         mode http
         bind *:443 ssl crt /etc/letsencrypt/live/www.nimdigest.tech/fullchain.pem
         default_backend web-backend
-                                                                                                                                                              1,6           Top
