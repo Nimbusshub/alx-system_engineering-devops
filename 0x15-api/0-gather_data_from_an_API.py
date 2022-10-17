@@ -3,8 +3,8 @@
 ID is passed as a parameter to the script"""
 
 if __name__ == "__main__":
-    import sys
     import requests
+    import sys
 
     try:
         response = requests.get("https://jsonplaceholder.typicode.com/users")
@@ -21,7 +21,7 @@ if __name__ == "__main__":
         for dic in tasks:
             if int(dic.get('userId')) == emp_id:
                 countTask += 1
-                if dic.get('completed') == True:
+                if dic.get('completed') is True:
                     countComp += 1
                     tk = dic.get('title')
                     compTask.append(tk)
