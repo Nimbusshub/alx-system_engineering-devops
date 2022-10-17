@@ -21,7 +21,8 @@ if __name__ == '__main__':
             for dic in tasks:
                 if int(dic.get('userId')) == emp_id:
                     f.write("\"{}\",\"{}\",\"{}\",\"{}\"\n".format(
-                        emp_id, response, dic.get('completed'), dic.get('title')))
+                        emp_id, response,
+                        dic.get('completed'), dic.get('title')))
 
     except Exception as err:
         print("Error: {}".format(err))
