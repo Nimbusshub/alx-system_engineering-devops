@@ -9,12 +9,15 @@ def top_ten(subreddit):
     """Function that fetches top 10 gists"""
     apiUrl = "https://reddit.com/r/{}/hot.json".format(subreddit)
     userAgent = "Mozilla/5.0"
+    limits = 10
 
     response = requests.get(
-        apiUrl, headers={"user-agent": userAgent})
+        apiUrl, headers={"user-agent": userAgent}, params={"limit": limits})
     if not response:
         print('None')
-    list_obj = response.json()['data']['children']
-
-    for num in range(0, 10):
-        print(list_obj[num]['data']['title'])
+        return
+    response = response.json()
+    list_obj = response['data']['children']
+    for obj in list_obj:
+        print(obj['data']['title'])
+    return
