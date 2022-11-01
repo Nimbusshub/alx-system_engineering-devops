@@ -13,7 +13,7 @@ def top_ten(subreddit):
     response = requests.get(
         apiUrl, headers={"user-agent": userAgent})
     if not response:
-        print('Wrong subreddit')
+        print('None')
     list_obj = response.json()['data']['children']
 
     for num in range(0, 10):
